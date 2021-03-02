@@ -1192,6 +1192,8 @@ ul {
   width: 100%;
   max-width: 100%;
   outline: none;
+  border-radius: 0px;
+  border-shadow: none;
 }
 .input.error,
 .textarea.error {
@@ -1876,6 +1878,9 @@ textarea::-webkit-input-placeholder {
   }
 }
 @media (max-width: 418px) {
+  .offer__wrap {
+    padding-top: 77px;
+  }
   .offer {
     height: 499px;
   }
@@ -1883,6 +1888,7 @@ textarea::-webkit-input-placeholder {
     height: 34px;
     font-size: 12px;
     line-height: 16px;
+    padding: 0 20px;
   }
 }
 html {
