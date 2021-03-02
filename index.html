@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet" href="assets/fonts/css/font-awesome.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&amp;display=swap"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <title>Age of Innocence</title>
+  </head>
+  <body>
+    <section class="modal">
+      <div class="modal__wrap">
+        <div class="modal__content">
+           <svg class="modal__close" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect y="14.1422" width="20" height="2" transform="rotate(-45 0 14.1422)" fill="black"/>
+<rect x="14.1421" y="15.5564" width="20" height="2" transform="rotate(-135 14.1421 15.5564)" fill="black"/>
+</svg>
+          <h3 class="modal__title">напишите нам <br> и мы перезвоним</h3>
+          <form>
+            <input class="input" type="text" placeholder="Ваше имя" id="name"/>
+            <input class="input" type="text" placeholder="Ваш телефон" id="tel-2"/>
+            <textarea class="textarea" placeholder="Ваше сообщение" id="comment"></textarea>
+            <button class="form__btn form__btn--max btn-main" type="submit">отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <header class="header">
+      <div class="header__mobile">
+        <div class="header__mobile-wrap wrap"><a class="header__logo" href="#"><img src="./assets/images/logo-header.svg"/></a>
+          <div class="header__main">
+            <nav>
+              <ul class="header__menu">
+                <li class="header__elem"><a class="header__link" href="#about">о компании  </a></li>
+                <li class="header__elem"><a class="header__link" href="#franchise">франшиза</a></li>
+                <li class="header__elem"><a class="header__link" href="#contacts">контакты</a></li>
+              </ul>
+            </nav>
+          </div><a class="header__tel" href="tel: +74956486860">+7 (495) 648-68-60</a>
+          <ul class="header__social">
+            <li><a class="header__social-elem" href=""><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.195 1.81719C19.6579 1.2716 19.0004 0.846304 18.2958 0.579955C17.5095 0.274941 16.6888 0.120287 15.6446 0.0730313C14.4458 0.0128879 14.0462 0 11.0041 0C7.97916 0 7.57955 0.0128879 6.36786 0.0644394C5.31514 0.111695 4.49875 0.26635 3.72103 0.571363C2.99057 0.846304 2.35465 1.26301 1.81755 1.8129L1.81325 1.81719C1.27185 2.34989 0.842173 3.00288 0.575771 3.71171C0.270698 4.49787 0.116014 5.3184 0.0687488 6.36232C0.0128904 7.56089 0 7.96041 0 11.002C0 14.0263 0.0128904 14.4258 0.064452 15.6373C0.111717 16.6898 0.266402 17.506 0.571474 18.2836C0.842173 19.0053 1.26326 19.6454 1.81325 20.1867L1.81755 20.191C2.35035 20.7323 3.00776 21.1619 3.71243 21.424C4.49875 21.729 5.31944 21.8836 6.36356 21.9309C7.57096 21.9824 7.97056 21.9953 10.9998 21.9953C14.029 21.9953 14.4286 21.9824 15.6361 21.9309C16.6888 21.8836 17.5052 21.729 18.2829 21.424C19.7223 20.8655 20.8696 19.7228 21.4281 18.2836C21.7332 17.4974 21.8879 16.6812 21.9352 15.633C21.9867 14.4215 21.9996 14.0177 21.9996 10.9977C21.9996 7.94323 21.9953 7.5523 21.9438 6.36232C21.8965 5.30981 21.7418 4.49357 21.4367 3.71601C21.1617 2.98999 20.7449 2.34989 20.195 1.81719ZM20.4614 15.5729C20.4098 16.707 20.2164 17.3342 20.0532 17.7552C19.645 18.8077 18.8071 19.6454 17.7544 20.0535C17.3376 20.2168 16.7102 20.4101 15.5759 20.4574C14.3728 20.5089 13.9732 20.5218 11.0084 20.5218C8.03931 20.5218 7.63971 20.5089 6.4409 20.4574C5.30655 20.4058 4.68351 20.2168 4.26242 20.0535C3.73392 19.8559 3.25268 19.5466 2.87026 19.1471C2.46636 18.7519 2.16129 18.2836 1.96793 17.7552C1.80466 17.3385 1.6113 16.7113 1.56403 15.5772C1.51247 14.3743 1.49958 13.9748 1.49958 11.0105C1.49958 8.04204 1.51247 7.64251 1.56403 6.44394C1.6156 5.30981 1.80466 4.6826 1.96793 4.26589C2.16129 3.73749 2.47496 3.25204 2.87456 2.874C3.26986 2.47018 3.73821 2.16516 4.26672 1.97185C4.68351 1.8086 5.31084 1.61528 6.4452 1.56803C7.6526 1.51647 8.0522 1.50359 11.0127 1.50359C13.9775 1.50359 14.3771 1.51647 15.5802 1.56803C16.7145 1.61958 17.3419 1.8086 17.7587 1.97185C18.2872 2.16516 18.7684 2.47877 19.1508 2.87829C19.5547 3.27352 19.8598 3.74178 20.0532 4.27018C20.2164 4.68689 20.4098 5.3141 20.4571 6.44824C20.5129 7.6554 20.5215 8.05492 20.5215 11.0148C20.5301 14.0779 20.5129 14.3958 20.4614 15.5729Z" fill="white"/>
+<path d="M11.0043 6.32361C8.42621 6.32361 6.32507 8.42003 6.32507 11.0019C6.32507 13.5795 8.42191 15.6802 11.0043 15.6802C13.5867 15.6802 15.6835 13.5795 15.6835 11.0019C15.6835 8.42433 13.5824 6.32361 11.0043 6.32361ZM11.0043 14.4215C9.11799 14.4215 7.58404 12.8878 7.58404 11.0019C7.58404 9.11598 9.11799 7.58232 11.0043 7.58232C12.8906 7.58232 14.4245 9.11598 14.4245 11.0019C14.4245 12.8878 12.8906 14.4215 11.0043 14.4215Z" fill="white"/>
+<path d="M17.0284 3.90497C16.4354 3.90497 15.9499 4.38612 15.9499 4.98326C15.9499 5.5804 16.4311 6.06155 17.0284 6.06155C17.6213 6.06155 18.1069 5.5804 18.1069 4.98326C18.1069 4.38612 17.6213 3.90497 17.0284 3.90497Z" fill="white"/>
+</svg></a><a class="header__social-elem" href=""><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.22266 22H10.3984V14.1797H7.82031V11.6016H10.3984V8.37891C10.3984 6.6 11.8422 5.15625 13.6211 5.15625H16.8438V7.73438H14.2656C13.5566 7.73438 12.9766 8.31445 12.9766 9.02344V11.6016H16.7277L16.298 14.1797H12.9766V22H18.7773C20.5562 22 22 20.5562 22 18.7773V3.22266C22 1.44375 20.5562 0 18.7773 0H3.22266C1.44375 0 0 1.44375 0 3.22266V18.7773C0 20.5562 1.44375 22 3.22266 22ZM1.28906 3.22266C1.28906 2.15703 2.15703 1.28906 3.22266 1.28906H18.7773C19.843 1.28906 20.7109 2.15703 20.7109 3.22266V18.7773C20.7109 19.843 19.843 20.7109 18.7773 20.7109H14.2656V15.4688H17.3895L18.2488 10.3125H14.2656V9.02344H18.1328V3.86719H13.6211C11.1332 3.86719 9.10938 5.89102 9.10938 8.37891V10.3125H6.53125V15.4688H9.10938V20.7109H3.22266C2.15703 20.7109 1.28906 19.843 1.28906 18.7773V3.22266Z" fill="white"/>
+</svg></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__wrap wrap"><a class="header__logo" href="#"><img src="./assets/images/logo-header.svg"/></a>
+        <div class="header__rigth">
+          <div class="header__main">
+            <nav>
+              <ul class="header__menu">
+                <li class="header__elem"><a class="header__link" href="#about">о компании  </a></li>
+                <li class="header__elem"><a class="header__link" href="#franchise">франшиза</a></li>
+                <li class="header__elem"><a class="header__link" href="#contacts">контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__contacts">
+            <ul class="header__social">
+              <li><a class="header__social-elem"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.195 1.81719C19.6579 1.2716 19.0004 0.846304 18.2958 0.579955C17.5095 0.274941 16.6888 0.120287 15.6446 0.0730313C14.4458 0.0128879 14.0462 0 11.0041 0C7.97916 0 7.57955 0.0128879 6.36786 0.0644394C5.31514 0.111695 4.49875 0.26635 3.72103 0.571363C2.99057 0.846304 2.35465 1.26301 1.81755 1.8129L1.81325 1.81719C1.27185 2.34989 0.842173 3.00288 0.575771 3.71171C0.270698 4.49787 0.116014 5.3184 0.0687488 6.36232C0.0128904 7.56089 0 7.96041 0 11.002C0 14.0263 0.0128904 14.4258 0.064452 15.6373C0.111717 16.6898 0.266402 17.506 0.571474 18.2836C0.842173 19.0053 1.26326 19.6454 1.81325 20.1867L1.81755 20.191C2.35035 20.7323 3.00776 21.1619 3.71243 21.424C4.49875 21.729 5.31944 21.8836 6.36356 21.9309C7.57096 21.9824 7.97056 21.9953 10.9998 21.9953C14.029 21.9953 14.4286 21.9824 15.6361 21.9309C16.6888 21.8836 17.5052 21.729 18.2829 21.424C19.7223 20.8655 20.8696 19.7228 21.4281 18.2836C21.7332 17.4974 21.8879 16.6812 21.9352 15.633C21.9867 14.4215 21.9996 14.0177 21.9996 10.9977C21.9996 7.94323 21.9953 7.5523 21.9438 6.36232C21.8965 5.30981 21.7418 4.49357 21.4367 3.71601C21.1617 2.98999 20.7449 2.34989 20.195 1.81719ZM20.4614 15.5729C20.4098 16.707 20.2164 17.3342 20.0532 17.7552C19.645 18.8077 18.8071 19.6454 17.7544 20.0535C17.3376 20.2168 16.7102 20.4101 15.5759 20.4574C14.3728 20.5089 13.9732 20.5218 11.0084 20.5218C8.03931 20.5218 7.63971 20.5089 6.4409 20.4574C5.30655 20.4058 4.68351 20.2168 4.26242 20.0535C3.73392 19.8559 3.25268 19.5466 2.87026 19.1471C2.46636 18.7519 2.16129 18.2836 1.96793 17.7552C1.80466 17.3385 1.6113 16.7113 1.56403 15.5772C1.51247 14.3743 1.49958 13.9748 1.49958 11.0105C1.49958 8.04204 1.51247 7.64251 1.56403 6.44394C1.6156 5.30981 1.80466 4.6826 1.96793 4.26589C2.16129 3.73749 2.47496 3.25204 2.87456 2.874C3.26986 2.47018 3.73821 2.16516 4.26672 1.97185C4.68351 1.8086 5.31084 1.61528 6.4452 1.56803C7.6526 1.51647 8.0522 1.50359 11.0127 1.50359C13.9775 1.50359 14.3771 1.51647 15.5802 1.56803C16.7145 1.61958 17.3419 1.8086 17.7587 1.97185C18.2872 2.16516 18.7684 2.47877 19.1508 2.87829C19.5547 3.27352 19.8598 3.74178 20.0532 4.27018C20.2164 4.68689 20.4098 5.3141 20.4571 6.44824C20.5129 7.6554 20.5215 8.05492 20.5215 11.0148C20.5301 14.0779 20.5129 14.3958 20.4614 15.5729Z" fill="black"/>
+<path d="M11.0043 6.32361C8.42621 6.32361 6.32507 8.42003 6.32507 11.0019C6.32507 13.5795 8.42191 15.6802 11.0043 15.6802C13.5867 15.6802 15.6835 13.5795 15.6835 11.0019C15.6835 8.42433 13.5824 6.32361 11.0043 6.32361ZM11.0043 14.4215C9.11799 14.4215 7.58404 12.8878 7.58404 11.0019C7.58404 9.11598 9.11799 7.58232 11.0043 7.58232C12.8906 7.58232 14.4245 9.11598 14.4245 11.0019C14.4245 12.8878 12.8906 14.4215 11.0043 14.4215Z" fill="black"/>
+<path d="M17.0284 3.90497C16.4354 3.90497 15.9499 4.38612 15.9499 4.98326C15.9499 5.5804 16.4311 6.06155 17.0284 6.06155C17.6213 6.06155 18.1069 5.5804 18.1069 4.98326C18.1069 4.38612 17.6213 3.90497 17.0284 3.90497Z" fill="black"/>
+</svg></a><a class="header__social-elem"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.22266 22H10.3984V14.1797H7.82031V11.6016H10.3984V8.37891C10.3984 6.6 11.8422 5.15625 13.6211 5.15625H16.8438V7.73438H14.2656C13.5566 7.73438 12.9766 8.31445 12.9766 9.02344V11.6016H16.7277L16.298 14.1797H12.9766V22H18.7773C20.5562 22 22 20.5562 22 18.7773V3.22266C22 1.44375 20.5562 0 18.7773 0H3.22266C1.44375 0 0 1.44375 0 3.22266V18.7773C0 20.5562 1.44375 22 3.22266 22ZM1.28906 3.22266C1.28906 2.15703 2.15703 1.28906 3.22266 1.28906H18.7773C19.843 1.28906 20.7109 2.15703 20.7109 3.22266V18.7773C20.7109 19.843 19.843 20.7109 18.7773 20.7109H14.2656V15.4688H17.3895L18.2488 10.3125H14.2656V9.02344H18.1328V3.86719H13.6211C11.1332 3.86719 9.10938 5.89102 9.10938 8.37891V10.3125H6.53125V15.4688H9.10938V20.7109H3.22266C2.15703 20.7109 1.28906 19.843 1.28906 18.7773V3.22266Z" fill="black"/>
+</svg></a></li>
+            </ul>
+            <div class="header__btn"><span>перезвоните мне</span>
+              <div class="header__btn-icon"><svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.67305 1.52874L7.84497 1.01312C7.64634 0.957264 7.44243 1.08402 7.36158 1.31175L6.51784 3.71795C6.44402 3.92849 6.49324 4.17556 6.63913 4.3195L7.70434 5.3851C7.07154 7.03292 5.9659 8.40359 4.58956 9.19205L3.71771 7.89013C3.59818 7.71181 3.39779 7.65165 3.22553 7.74189L1.25682 8.77311C1.06874 8.87409 0.965028 9.1233 1.01073 9.36607L1.4326 11.6004C1.47654 11.8324 1.64529 12 1.84392 12C6.34558 12 10 7.54209 10 2.03146C10 1.79084 9.86465 1.58245 9.67305 1.52874Z" stroke="black"/>
+</svg>
+              </div>
+            </div><a class="header__tel" href="tel: +74956486860">+7 (495) 648-68-60</a>
+          </div>
+        </div>
+        <div class="header__burger"><label for="check">
+<input type="checkbox" id="check"/> 
+<span></span>
+<span></span>
+<span></span>
+</label>
+        </div>
+      </div>
+    </header>
+    <section class="banner">
+      <div class="banner__wrap wrap">
+        <div class="banner__content"> 
+          <h1 class="banner__title title-40">франшиза <br> нового поколения</h1>
+          <h3 class="banner__subtitle title-26">интернет-магазин детской премиальной обуви</h3>
+          <p class="banner__text text-13">Мировой бренд детской обуви</p>
+          <button class="banner__btn btn-main">получить презентацию</button>
+        </div>
+        <div class="banner__slider slider">
+          <div class="slider__slider-wrap">
+            <div class="slider__slides">
+              <div class="slider__slide"><img src="./assets/images/img-banner-1.png"/></div>
+              <div class="slider__slide"><img src="./assets/images/img-banner-1.png"/></div>
+            </div>
+            <div class="slider__btns">
+              <div class="slider__btn"><img src="./assets/images/arr-right.svg"/></div>
+              <div class="slider__btn"><img src="./assets/images/arr-left.svg"/></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advs">
+      <div class="advs__wrap wrap">
+        <ul class="advs__top">
+          <li>Рентабельность бизнеса:<strong>от 30%</strong></li>
+          <li>Срок окупаемости:     <strong>16-20 месяцев</strong></li>
+          <li>Прибыль:<strong>с первого месяца</strong></li>
+          <li>Срок запуска:<strong>десять недель</strong></li>
+        </ul>
+      </div>
+      <div class="advs__text">
+        <div class="wrap">
+          <p>
+            Сегодня рынок online продаж детской одежды и обуви –  <br>
+            один из наиболее динамично развивающихся сегментов fashion индустрии. <br>
+            В свою очередь, детский рынок является сегментом,  <br>
+            наименее подверженным колебаниям и кризисам.  <br>
+          </p>
+          <p>
+            Открытие по франшизе бутика в премиальном сегменте  <br>
+            предполагает значительный объём инвестиций. <br>
+          </p>
+          <p>
+            Online и digital модель продаж зарекомендовала себя  <br>
+            не только как современный и эффективный механизм продаж,   <br>
+            но и как антикризисное решение для бизнеса в части оптимизации затрат.  <br>
+            При этом, в отличии от классических форм ведения бизнеса и открытия магазина детской обуви,  <br>
+            который часто ‘привязан’ к торговым центрам, online бизнес может развиваться  <br>
+            и быть стабильным даже в период таких катаклизмов как пандемия.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="about__wrap wrap">
+        <div class="about__top">
+          <div class="about__img"><img src="./assets/images/about-1.png"/></div>
+          <ul class="about__list">
+            <li class="about__elem">
+              <h4 class="title-26">О КОМПАНИИ</h4>
+              <p>Age of Innocence — это мировой бренд детской премиальной обуви. Сегодня Age of innocence продается в ключевых мировых department stores от La Rinascente в Милане, LevelShoes в Дубае, Lane Crawford в Cингапуре до ЦУМа в Москве. Фокус компании - digital развитие и онлайн продажи.</p>
+            </li>
+            <li class="about__elem">
+              <h4 class="title-26">ДНК БРЕНДА </h4>
+              <p>Простота, минимализм, внимание к дизайну и деталям, сочетание классики, ретро и современных тенденций. Мы созвучны современным родителям, которые ведут активную социальную жизнь, вовлекают в нее своих детей и хотят, чтобы их ценности и их стиль и образ жизни нашли отражение в их детях.</p>
+            </li>
+            <li class="about__elem">
+              <h4 class="title-26">СЕГМЕНТ РЫНКА</h4>
+              <p>Бренд занял особую нишу на рынке детской обуви, сочетая современный дизайн, отличное качество, комфорт и конкурентную цену. Сегмент рынка детской одежды насыщен брендами со схожими характеристиками, такими как: Bonpoint, Il Gufo, Caramel Baby и так далее, а ниша дизайнерской детской обуви практически не занята. Бренд часто называют ”Jimmy’s” или ”Manolo’s” для детей.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="about__bottom">
+          <ul class="about__list">
+            <li class="about__elem">
+              <h4 class="title-26">Жизненный цикл продукта</h4>
+              <p>Поскольку детская ножка быстро растет, мы наблюдаем высокий уровень возвратности клиента. Средняя частота заказов на 1 клиента составляет 4-5 раз в год.</p>
+            </li>
+            <li class="about__elem">
+              <h4 class="title-26">Ключ к успеху</h4>
+              <p>Помимо самого продукта, который имеет подтвержденный спрос у родителей во всем мире, нашей сильной стороной является современный подход и фокус на технологиях. Бренд активно взаимодействует в социальных медиа, используя все доступные digital инструменты.</p>
+            </li>
+          </ul>
+          <div class="about__img"><img src="./assets/images/about-2.png"/></div>
+        </div>
+      </div>
+    </section>
+    <section class="about-2">
+      <div class="about-2__wrap wrap">
+        <div class="about-2__content">
+          <h2 class="title-40">О НАС:</h2>
+          <ul class="about-2__list">
+            <li class="about-2__elem">
+              <h4 class="title-26">Фокус бизнеса</h4>
+              <p class="text-13">Обувь для детей от 0 до 16 лет</p>
+            </li>
+            <li class="about-2__elem">
+              <h4 class="title-26">E-Commerce</h4>
+              <p class="text-13">Цифровые технологии являются ядром развития нашего бренда и основным каналом продаж</p>
+            </li>
+            <li class="about-2__elem">
+              <h4 class="title-26">age of innocence </h4>
+              <p class="text-13">Собственное производство для поддержания высокого качества продукта</p>
+            </li>
+            <li class="about-2__elem">
+              <h4 class="title-26">лондон</h4>
+              <p class="text-13">Место учреждения компании и основного склада</p>
+            </li>
+            <li class="about-2__elem">
+              <h4 class="title-26">x 2,5</h4>
+              <p class="text-13">Развиваемся и удваиваем объемы продаж каждый год</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="franchise" id="franchise">
+      <div class="franchise__wrap wrap">
+        <div class="franchise__content">
+          <h2 class="title-40"><font>Франшиза<font> age of innocence – это…</h2>
+          <ul class="franchise__list">
+            <li class="franchise__elem"><i><img src="./assets/images/icon-1.svg"/></i>
+              <div class="franchise__elem-content">
+                <h4 class="title-26">Эффективная бизнес <br> модель</h4>
+                <p class="text-13">Готовая модель развития бизнеса, отработанная на рынке Великобритании, США, России и других стран</p>
+              </div>
+            </li>
+            <li class="franchise__elem"><i><img src="./assets/images/icon-2.svg"/></i>
+              <div class="franchise__elem-content">
+                <h4 class="title-26">Высокое качество <br> и востребованный продукт</h4>
+                <p class="text-13">Лидерство на рынке премиальной детской обуви – благодаря современному дизайну, отличному качеству и высокому уровню сервиса</p>
+              </div>
+            </li>
+            <li class="franchise__elem"><i><img src="./assets/images/icon-3.svg"/></i>
+              <div class="franchise__elem-content">
+                <h4 class="title-26">Профессиональная <br> поддержка</h4>
+                <p class="text-13">Полная поддержка франчайзи на всех этапах развития бизнеса</p>
+              </div>
+            </li>
+            <li class="franchise__elem"><i><img src="./assets/images/icon-4.svg"/></i>
+              <div class="franchise__elem-content">
+                <h4 class="title-26">Современные digital <br> каналы продаж</h4>
+                <p class="text-13">Эффективный алгоритм работы в рамках всех доступных digital инструментов, online маркетинга и продаж</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="brand">
+      <div class="brand__wrap wrap">
+        <h2 class="title-40">Наш бренд представлен</h2>
+        <h5>в лучших универмагах <br> Европы и Азии, таких как: <br> la rinascente - milan, level shoes – dubai, <br> lane Crawford (shanghai, hong kong, Singapore), <br> alhazm – doha, <font> Tsum – Moscow</font>  и многих других </h5>
+      </div>
+    </section>
+    <section class="famous">
+      <div class="famous__wrap wrap">
+        <h2 class="title-40">В наших туфельках можно увидеть…</h2>
+        <div class="famous__main">
+          <div class="famous__content"> 
+            <ul class="famous__list">
+              <li>Дочку Евы Чен, <br> главы Instagram fashion department</li>
+              <li>Дочку Бредли Купера и Ирины Шейк</li>
+              <li>Внучку Карин Ройтфельд, легендарного главного редактора французского vogue</li>
+              <li>Детей членов королевской <br> семьи катара Al Thani</li>
+              <li>Дочку Романа Абрамовича <br> и Дарьи Жуковой</li>
+              <li>Дочку Елены Перминовой <br> и Александра Лебедева</li>
+            </ul>
+            <p>…и много других маленьких звезд, детей знаменитостей и просто чудесных маленьких девочек!</p>
+          </div>
+          <div class="famous__slider slider slider--famous">
+            <div class="slider__slider-wrap">
+              <div class="slider__slides">
+                <div class="slider__slide"><img src="./assets/images/famous-1.png"/></div>
+                <div class="slider__slide"><img src="./assets/images/famous-1.png"/></div>
+              </div>
+              <div class="slider__btns">
+                <div class="slider__btn"><img src="./assets/images/arr-right.svg"/></div>
+                <div class="slider__btn"><img src="./assets/images/arr-left.svg"/></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pressa">
+      <div class="pressa__wrap wrap">
+        <h2 class="title-40">О нас пишут…</h2>
+        <div class="pressa__content-mobile"><img src="./assets/images/mobile-pressa.svg"/></div>
+        <div class="pressa__content">
+          <div class="pressa__row"><img class="vogue" src="./assets/images/vogue.svg"/><img class="tatler" src="./assets/images/tatler.svg"/><img class="instyle" src="./assets/images/instyle.svg"/></div>
+          <div class="pressa__row"><img class="elle" src="./assets/images/elle.svg"/><img class="bazaar" src="./assets/images/bazaar.svg"/><img class="grazia" src="./assets/images/grazia.svg"/></div>
+          <div class="pressa__row"><img class="face" src="./assets/images/face.svg"/><img class="rbk" src="./assets/images/rbk.svg"/></div>
+          <div class="pressa__row"><img class="buro" src="./assets/images/buro.svg"/><img class="glamour" src="./assets/images/glamour.svg"/><img class="claire" src="./assets/images/claire.svg"/></div>
+        </div>
+      </div>
+    </section>
+    <section class="offer">
+      <div class="offer__wrap wrap">
+        <div class="offer__content">
+          <h2 class="title-40">мы предлагаем эксклюзивную франшизу online бизнеса на рынках:</h2>
+          <div class="offer__cols">
+            <ul class="offer__list">
+              <li class="offer__elem">Украины</li>
+              <li class="offer__elem">Казахстана</li>
+              <li class="offer__elem">Узбекистана</li>
+              <li class="offer__elem">Таджикистана</li>
+              <li class="offer__elem">Белоруссии</li>
+            </ul>
+            <ul class="offer__list">
+              <li class="offer__elem">Армении</li>
+              <li class="offer__elem">Азербайджана</li>
+              <li class="offer__elem">Грузии</li>
+              <li class="offer__elem">Киргизии</li>
+              <li class="offer__elem">Молдавии</li>
+            </ul>
+          </div>
+          <p class="offer__text">по принципу “ОДНА СТРАНА - ОДНА ФРАНШИЗА”</p>
+          <button class="offer__btn btn-main">получить подробное предложение</button>
+        </div>
+      </div>
+    </section>
+    <section class="partners">
+      <div class="partners__wrap wrap">
+        <div class="partners__content">
+          <h2 class="title-40">Наши партнеры получают... </h2>
+          <ol class="partners__list">
+            <li class="partners__elem text-18">Эксклюзив на всю страну, т. е. эксклюзивное право вести онлайн бизнес на выбранной территории под брендом Age of Innocence</li>
+            <li class="partners__elem text-18">Готовый работающий online магазин “под ключ”</li>
+            <li class="partners__elem text-18">Готовый instagram “под ключ”</li>
+            <li class="partners__elem text-18">Весь фото и видео-контент</li>
+            <li class="partners__elem text-18">Приоритетный доступ <br> к западному стоку <br> Age of Innocence</li>
+            <li class="partners__elem text-18">Алгоритм управления <br> бизнесом и продажами</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <section class="privileges">
+      <div class="privileges__wrap wrap">
+        <h2 class="title-40">А также вы получите…</h2>
+        <div class="privileges__content">
+          <ul class="privileges__list">
+            <li class="privileges__elem">
+              <h4 class="title-26">Проверенную <br> Бизнес модель</h4>
+              <p>5 лет <br> успешной работы</p>
+            </li>
+            <li class="privileges__elem">
+              <h4 class="title-26">Известный <br> бренд</h4>
+              <p>Нас любят и покупают <br> во всём мире</p>
+            </li>
+            <li class="privileges__elem">
+              <h4 class="title-26">Уникальный <br> продукт</h4>
+              <p>Премиальное качество и дизайн <br> по разумным ценам</p>
+            </li>
+            <li class="privileges__elem">
+              <h4 class="title-26">Доказанный <br> спрос</h4>
+              <p>Успешная работа бизнеса в РФ, <br> США и Великобритании</p>
+            </li>
+            <li class="privileges__elem">
+              <h4 class="title-26">Эффективные <br> бизнес-процессы</h4>
+              <p>Сильная экспертиза в online продажах, <br> лучшие IT решения</p>
+            </li>
+            <li class="privileges__elem">
+              <h4 class="title-26">Комплексную <br> поддержку бизнеса</h4>
+              <p>Личный менеджер, <br> который всегда готов помочь</p>
+            </li>
+          </ul>
+          <p class="privileges__text">...и конечно вы становитесь частью Age of innocence community</p>
+        </div>
+      </div>
+    </section>
+    <section class="conditions">
+      <div class="conditions__wrap wrap">
+        <h2 class="title-40">Условия франшизы</h2>
+        <div class="conditions__content">
+          <div class="conditions__block">
+            <h4 class="title-26">Паушальный взнос <font> от 100 000 €* </font></h4>
+            <ul class="conditions__list">
+              <li class="conditions__elem">Эксклюзивное право на ведение online бизнеса в стране</li>
+              <li class="conditions__elem">Готовый сайт и аккаунт Instagram </li>
+              <li class="conditions__elem">Обучение и поддержка при запуске проекта</li>
+              <li class="conditions__elem">Настройка IT систем, сайта и Instagram</li>
+              <li class="conditions__elem">Помощь в настройке бизнес-процессов</li>
+            </ul>
+          </div>
+          <div class="conditions__block">
+            <h4 class="title-26">роялти 5% от выручки</h4>
+            <ul class="conditions__list">
+              <li class="conditions__elem">Доступ к заказу товара </li>
+              <li class="conditions__elem">Личный менеджер 24/7</li>
+              <li class="conditions__elem">Регулярно обновляемый и предоставляемый фото и видео контент</li>
+              <li class="conditions__elem">Глобальная маркетинговая поддержка бренда и PR</li>
+            </ul>
+          </div>
+          <div class="conditions__block">
+            <h4 class="title-26">Инвестиции в запуск <font>от 50 000 €*</font></h4>
+            <ul class="conditions__list">
+              <li class="conditions__elem">Организация бизнеса</li>
+              <li class="conditions__elem">Закупка стока (70% ассортимента)</li>
+            </ul>
+          </div>
+        </div>
+        <p class="conditions__text">* - зависит от юрисдикции</p>
+      </div>
+    </section>
+    <section class="form" id="contacts">
+      <div class="form__wrap wrap">
+        <h2 class="title-40">Вместе мы запустим современный и эффективный бизнес</h2>
+        <div class="form__content">
+          <div class="form__img"><img src="./assets/images/form-img.png"/></div>
+          <div class="form__main">
+            <div class="form__contact">
+              <h3 class="title-26">контакты</h3><a href="tel:074956486860">+7 (495) 648-68-60</a><a href="mailto:franch@age-of-innocence.com">franch@age-of-innocence.com</a><a href="www.age-of-innocence.com">www.age-of-innocence.com</a>
+            </div>
+            <form class="form__form-block">
+              <h3 class="title-26">напишите нам</h3>
+              <div class="form__col-2">
+                <input class="input error" type="text" placeholder="Ваше имя" id="name" name="name-1"/>
+                <input class="input" type="text" placeholder="Ваш e-mail" id="email" name="email-1"/>
+              </div>
+              <input class="input" type="text" placeholder="Ваш телефон" id="tel" name="tel-1"/>
+              <textarea class="textarea" placeholder="Ваше сообщение" id="comment"></textarea>
+              <button class="form__btn form__btn--max btn-main" type="submit">отправить сообщение</button>
+            </form>
+            <button class="form__btn btn-main btn-main--gold" type="submit">
+              Заполнить анкету<svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464467C13.9763 0.269205 13.6597 0.269205 13.4645 0.464467C13.2692 0.659729 13.2692 0.976312 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53554C13.6597 7.7308 13.9763 7.7308 14.1716 7.53554L17.3536 4.35355ZM-4.37114e-08 4.5L17 4.5L17 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white"/>
+</svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="footer">
+      <div class="footer__wrap wrap"><span>© AGE OF INNOCENCE</span>
+        <ul class="header__social">
+          <li><a class="header__social-elem"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.195 1.81719C19.6579 1.2716 19.0004 0.846304 18.2958 0.579955C17.5095 0.274941 16.6888 0.120287 15.6446 0.0730313C14.4458 0.0128879 14.0462 0 11.0041 0C7.97916 0 7.57955 0.0128879 6.36786 0.0644394C5.31514 0.111695 4.49875 0.26635 3.72103 0.571363C2.99057 0.846304 2.35465 1.26301 1.81755 1.8129L1.81325 1.81719C1.27185 2.34989 0.842173 3.00288 0.575771 3.71171C0.270698 4.49787 0.116014 5.3184 0.0687488 6.36232C0.0128904 7.56089 0 7.96041 0 11.002C0 14.0263 0.0128904 14.4258 0.064452 15.6373C0.111717 16.6898 0.266402 17.506 0.571474 18.2836C0.842173 19.0053 1.26326 19.6454 1.81325 20.1867L1.81755 20.191C2.35035 20.7323 3.00776 21.1619 3.71243 21.424C4.49875 21.729 5.31944 21.8836 6.36356 21.9309C7.57096 21.9824 7.97056 21.9953 10.9998 21.9953C14.029 21.9953 14.4286 21.9824 15.6361 21.9309C16.6888 21.8836 17.5052 21.729 18.2829 21.424C19.7223 20.8655 20.8696 19.7228 21.4281 18.2836C21.7332 17.4974 21.8879 16.6812 21.9352 15.633C21.9867 14.4215 21.9996 14.0177 21.9996 10.9977C21.9996 7.94323 21.9953 7.5523 21.9438 6.36232C21.8965 5.30981 21.7418 4.49357 21.4367 3.71601C21.1617 2.98999 20.7449 2.34989 20.195 1.81719ZM20.4614 15.5729C20.4098 16.707 20.2164 17.3342 20.0532 17.7552C19.645 18.8077 18.8071 19.6454 17.7544 20.0535C17.3376 20.2168 16.7102 20.4101 15.5759 20.4574C14.3728 20.5089 13.9732 20.5218 11.0084 20.5218C8.03931 20.5218 7.63971 20.5089 6.4409 20.4574C5.30655 20.4058 4.68351 20.2168 4.26242 20.0535C3.73392 19.8559 3.25268 19.5466 2.87026 19.1471C2.46636 18.7519 2.16129 18.2836 1.96793 17.7552C1.80466 17.3385 1.6113 16.7113 1.56403 15.5772C1.51247 14.3743 1.49958 13.9748 1.49958 11.0105C1.49958 8.04204 1.51247 7.64251 1.56403 6.44394C1.6156 5.30981 1.80466 4.6826 1.96793 4.26589C2.16129 3.73749 2.47496 3.25204 2.87456 2.874C3.26986 2.47018 3.73821 2.16516 4.26672 1.97185C4.68351 1.8086 5.31084 1.61528 6.4452 1.56803C7.6526 1.51647 8.0522 1.50359 11.0127 1.50359C13.9775 1.50359 14.3771 1.51647 15.5802 1.56803C16.7145 1.61958 17.3419 1.8086 17.7587 1.97185C18.2872 2.16516 18.7684 2.47877 19.1508 2.87829C19.5547 3.27352 19.8598 3.74178 20.0532 4.27018C20.2164 4.68689 20.4098 5.3141 20.4571 6.44824C20.5129 7.6554 20.5215 8.05492 20.5215 11.0148C20.5301 14.0779 20.5129 14.3958 20.4614 15.5729Z" fill="black"/>
+<path d="M11.0043 6.32361C8.42621 6.32361 6.32507 8.42003 6.32507 11.0019C6.32507 13.5795 8.42191 15.6802 11.0043 15.6802C13.5867 15.6802 15.6835 13.5795 15.6835 11.0019C15.6835 8.42433 13.5824 6.32361 11.0043 6.32361ZM11.0043 14.4215C9.11799 14.4215 7.58404 12.8878 7.58404 11.0019C7.58404 9.11598 9.11799 7.58232 11.0043 7.58232C12.8906 7.58232 14.4245 9.11598 14.4245 11.0019C14.4245 12.8878 12.8906 14.4215 11.0043 14.4215Z" fill="black"/>
+<path d="M17.0284 3.90497C16.4354 3.90497 15.9499 4.38612 15.9499 4.98326C15.9499 5.5804 16.4311 6.06155 17.0284 6.06155C17.6213 6.06155 18.1069 5.5804 18.1069 4.98326C18.1069 4.38612 17.6213 3.90497 17.0284 3.90497Z" fill="black"/>
+</svg></a><a class="header__social-elem"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.22266 22H10.3984V14.1797H7.82031V11.6016H10.3984V8.37891C10.3984 6.6 11.8422 5.15625 13.6211 5.15625H16.8438V7.73438H14.2656C13.5566 7.73438 12.9766 8.31445 12.9766 9.02344V11.6016H16.7277L16.298 14.1797H12.9766V22H18.7773C20.5562 22 22 20.5562 22 18.7773V3.22266C22 1.44375 20.5562 0 18.7773 0H3.22266C1.44375 0 0 1.44375 0 3.22266V18.7773C0 20.5562 1.44375 22 3.22266 22ZM1.28906 3.22266C1.28906 2.15703 2.15703 1.28906 3.22266 1.28906H18.7773C19.843 1.28906 20.7109 2.15703 20.7109 3.22266V18.7773C20.7109 19.843 19.843 20.7109 18.7773 20.7109H14.2656V15.4688H17.3895L18.2488 10.3125H14.2656V9.02344H18.1328V3.86719H13.6211C11.1332 3.86719 9.10938 5.89102 9.10938 8.37891V10.3125H6.53125V15.4688H9.10938V20.7109H3.22266C2.15703 20.7109 1.28906 19.843 1.28906 18.7773V3.22266Z" fill="black"/>
+</svg></a></li>
+        </ul><a class="footer__tel" href="tel: +74956486860">+7 (495) 648-68-60</a>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/libs.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" type="text/javascript"></script>
+  </body>
+</html>
