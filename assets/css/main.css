@@ -21,7 +21,7 @@ ul {
   padding: 0;
 }
 body {
-  font-family: "Playfair Display", "Merriweather", "PT Serif", serif;
+  font-family: "Playfair Display SC", "Merriweather", "PT Serif", serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 17px;
@@ -459,6 +459,7 @@ ul {
   line-height: 48px;
   letter-spacing: 0.02em;
   margin-bottom: 25px;
+  font-family: 'Playfair Display', serif;
 }
 .advs__top li:nth-child(2) {
   margin-left: 100px;
