@@ -2180,8 +2180,8 @@ html {
 @media (max-width: 500px) {
   .partners {
     height: 1050px;
-    background: url("../../assets/images/partners-bg-mob.png") right 80% no-repeat;
-    background-size: cover;
+    background: url("../../assets/images/mob.jpg") right 80% no-repeat;
+    background-size: contain;
   }
   .privileges__wrap {
     padding-top: 50px;
@@ -2210,9 +2210,9 @@ html {
 }
 @media (max-width: 400px) {
   .partners {
-    height: 1050px;
-    background: url("../../assets/images/partners-bg-mob.png") right bottom no-repeat;
-    background-size: cover;
+    height: 950px;
+    background: url("../../assets/images/mob.jpg") right bottom no-repeat;
+    background-size: contain;
   }
 }
 .pressa__wrap {
