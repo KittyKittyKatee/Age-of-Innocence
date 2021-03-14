@@ -807,14 +807,14 @@ ul {
     width: 100%;
   }
   .banner__wrap {
-    padding-top: 477px;
+    padding-top: 577px;
   }
   .slider {
     display: none;
   }
   .banner {
-    background: url("../../assets/images/main-banner-mob.png");
-    height: 650px;
+    background: url("../../assets/images/banner-mob-bg.jpg") center;
+    height: 750px;
     background-size: cover;
   }
   .banner__title {
@@ -849,7 +849,15 @@ ul {
 }
 @media (max-width: 480px) {
   .banner__wrap {
+    padding-top: 561px;
+  }
+}
+@media (max-width: 400px) {
+  .banner__wrap {
     padding-top: 461px;
+  }
+  .banner {
+    height: 650px;
   }
 }
 .brand {
@@ -1915,12 +1923,12 @@ textarea::-webkit-input-placeholder {
 .modal {
   display: none;
   position: fixed;
-  top: 200px;
+  top: 150px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 500px;
-  z-index: 1000;
+  z-index: 100000;
   background-color: #fff;
   border: 1px solid #000;
 }
@@ -1944,6 +1952,11 @@ textarea::-webkit-input-placeholder {
   line-height: 30px;
   margin-bottom: 15px;
   text-transform: uppercase;
+}
+@media (max-width: 1400px) {
+  .modal {
+    top: 100px;
+  }
 }
 @media (max-width: 550px) {
   .modal {
@@ -2096,7 +2109,7 @@ html {
   overflow-x: hidden;
 }
 .partners {
-  background: url("../../assets/images/partners-bg.png") right bottom no-repeat;
+  background: url("../../assets/images/partners-2-bg.png") right bottom no-repeat;
   height: 900px;
   background-size: cover;
   overflow: hidden;
@@ -2140,14 +2153,14 @@ html {
 }
 @media (max-width: 1674px) {
   .partners {
-    background: url("../../assets/images/partners-bg.png") 40% bottom no-repeat;
+    background: url("../../assets/images/partners-2-bg.png") 40% bottom no-repeat;
     background-size: cover;
   }
 }
 @media (max-width: 980px) {
   .partners {
     height: 950px;
-    background: url("../../assets/images/partners-bg.png") 40% bottom no-repeat;
+    background: url("../../assets/images/partners-2-bg.png") 40% bottom no-repeat;
     background-size: cover;
   }
 }
@@ -2160,7 +2173,7 @@ html {
   }
   .partners {
     height: 950px;
-    background: url("../../assets/images/partners-bg.png") 30% bottom no-repeat;
+    background: url("../../assets/images/partners-2-bg.png") 30% bottom no-repeat;
     background-size: cover;
   }
 }
