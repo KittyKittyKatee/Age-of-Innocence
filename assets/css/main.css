@@ -1138,7 +1138,6 @@ ul {
   }
   .famous__list li {
     margin-bottom: 13px;
-    font-weight: 600;
   }
   .famous {
     height: auto;
@@ -2227,6 +2226,7 @@ html {
   max-width: 740px;
   width: 100%;
   margin: 0 auto;
+  opacity: 0.5;
 }
 .pressa__row {
   display: -webkit-box;
