@@ -1627,7 +1627,6 @@ textarea::-webkit-input-placeholder {
   position: fixed;
   background: #fff;
   z-index: 1000;
-  border-bottom: 1px solid #d8b269;
   -webkit-animation: opacity 0.5s;
           animation: opacity 0.5s;
 }
@@ -1772,6 +1771,12 @@ textarea::-webkit-input-placeholder {
   display: none;
 }
 @media (max-width: 1060px) {
+  .header.fixed {
+    background: transparent;
+  }
+  .header.fixed .header__logo--mob {
+    opacity: 0;
+  }
   .header__mobile-wrap {
     min-width: 100%;
   }
