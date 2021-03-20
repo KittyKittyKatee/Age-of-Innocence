@@ -295,7 +295,7 @@ ul {
   }
   .about-2 {
     height: 450px;
-    background: url("../../assets/images/about-2-bg.png") 50%;
+    background: url("../../assets/images/about-2-bg.png") 24%;
     background-size: cover;
   }
   .about-2__content {
@@ -488,6 +488,14 @@ ul {
   }
 }
 @media (max-width: 500px) {
+  .about__bottom .about__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .about__top .about__img,
   .about__bottom .about__img,
   .about__img-mob {
@@ -495,7 +503,7 @@ ul {
   }
   .about__bottom .about__img img {
     margin-top: -19px;
-    margin-left: -10%;
+    margin-left: -2%;
     width: 85%;
   }
   .about__bottom {
@@ -528,6 +536,20 @@ ul {
   }
   .about__top {
     padding-bottom: 0;
+  }
+  .about__bottom .about__img {
+    width: 100%;
+  }
+  .about__bottom .about__img img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100%;
+    margin-left: -2%;
+  }
+}
+@media (max-width: 370px) {
+  .about__bottom .about__img img {
+    width: 112%;
   }
 }
 .advs {
@@ -991,6 +1013,7 @@ ul {
   .conditions__elem {
     font-size: 20px;
     line-height: 26px;
+    margin-bottom: 3px;
   }
   .conditions__elem::before {
     top: 10px;
@@ -1002,15 +1025,15 @@ ul {
   .conditions__wrap h2 {
     font-size: 24px;
     line-height: 28px;
-    margin-bottom: 16px;
+    margin-bottom: 25px;
   }
   .conditions__block {
-    margin-bottom: 13px;
+    margin-bottom: 28px;
   }
   .conditions__block h4 {
     font-size: 20px;
     line-height: 25px;
-    margin-bottom: 2px;
+    margin-bottom: 12px;
   }
   .conditions__block h4 font {
     display: block;
